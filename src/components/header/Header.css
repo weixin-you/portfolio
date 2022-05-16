@@ -4,7 +4,6 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-    background-color: lightblue;
     padding-left: 4rem;
     padding-right: 4rem;
 }
@@ -30,6 +29,10 @@ nav  ul {
     justify-content: space-between;
     font-size: 1.5rem;
     list-style: none;
+}
+
+nav li:hover {
+    color: red;
 }
 
 @media only screen and (max-width: 1000px) {

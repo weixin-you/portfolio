@@ -9,7 +9,8 @@ const Introduction = () => {
                 <h2>About</h2>
                 <p>Hello, I'm Weixin. I have been learning front-end and backend development from various platforms such as 
                     Udacity and LinkedIn Learning as well as MDN docs for more than two years. Now I am studying at Algonquin 
-                    College for Computer programming. In this website, some projects have been listed to show my development skills.
+                    College for Computer programming. I am passionate about programming regardless of front-end and backend development.
+                    In this website, I list some projects to show my development skills.
                 </p>
             </div>
            
@@ -19,16 +20,28 @@ const Introduction = () => {
               <div className='project-group'>
                 <div className='weather'>
                     <div>
-                        <h3>Weather Report</h3>
-                        <img src="imgs/weather.jpeg" alt="weather" />
-                        <p>This project is used to report weather</p>
+                        <h3>Travel App</h3>
+                        <img src="imgs/travel-app.png" className="project-img" alt="weather info" />
+                        <p>You can use this app to search for a city where you want to travel and it will display weather information for you.</p>
+                        <p className='source-info'>View this app <a href='https://weixin-you.github.io/travel-app/'>online</a> or view the source
+                         code <a href='https://github.com/weixin-you/travel-app'>on GitHub</a>.</p>
+                    </div>
+                </div>
+                <div className='githubuser'>
+                    <div>
+                        <h3>GitHub Users</h3>
+                        <img src="imgs/githubusers.png" className="project-img" alt="github users" />
+                        <p>You can use this app to view the top 100 users on GitHub by clicking the page buttons on the bottom of this app.</p>
+                        <p className='source-info'>View this app <a href='https://weixin-you.github.io/githubusers/'>online</a> or view the source
+                         code <a href='https://github.com/weixin-you/githubusers'>on GitHub</a>.</p>
                     </div>
                 </div>
                 <div className='hotel'>
                     <div>
                         <h3>Hotel Management</h3>
-                        <img src="imgs/hotel_management.jpeg" alt="hotel" />
-                        <p>This project is used to manage hotel</p>
+                        <img src="imgs/hotel.png" className="project-img" alt="hotel management" />
+                        <p className='source-info'>You can use this app to manage customers in a hotel, including adding, removing, displaying customers and making payments 
+                            by customers. View source code <a href='https://github.com/weixin-you/hotel'>on GitHub</a>. </p>
                     </div>
                 </div>
               </div>
@@ -59,11 +72,11 @@ const Introduction = () => {
                     <h3>Technical Skills</h3>
                     <div className='content'>
                         <ul>
-                            <li>Programming Languages: Java, JavaScript</li>
-                            <li>Web Programming: HTML, CSS, ReactJS</li>
+                            <li>Programming Languages: Java, PHP, Bash Script</li>
+                            <li>Web Programming: HTML, CSS, JavaScript, ReactJS</li>
                             <li>Operating Systems: Windows, Linux, macOS</li>
-                            <li>Database: PostgreSQL, SQL, Microsoft Access</li>
-                            <li>Others: Git, GitHub, Premiere Pro</li>
+                            <li>Database: PostgreSQL, SQL, MySQL, Microsoft Access, Oracle</li>
+                            <li>Others: Git, GitHub, Premiere Pro, Premier Audition</li>
                         </ul>
                     </div>
                 </div>

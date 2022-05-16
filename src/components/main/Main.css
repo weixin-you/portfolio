@@ -25,8 +25,7 @@ p {
     margin-bottom: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: bisque;
-    border: 2px solid black;
+    border-top: 2px solid rebeccapurple;
 }
 
 .about > div {
@@ -56,7 +55,7 @@ p {
     margin-top: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: blueviolet;
+    border-top: 2px solid rebeccapurple;
 
 }
 
@@ -66,30 +65,51 @@ p {
 }
 .project-group {
     display: flex;
-    gap: 2rem;
     justify-content: space-around;
     
 }
 
 .projects p {
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 .project-group h3 {
     padding-bottom: 1rem;
 }
 
+.weather, .githubuser, .hotel {
+    flex-basis: 30%;
+}
+
+.weather .project-img, .githubuser .project-img, .hotel .project-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 40rem;
+    height: 25rem;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.source-info a {
+    color: yellow;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 .resume {
     width: 100%;
     margin: auto;
-    background-color: rgb(6, 7, 7);
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    border: 2px solid black;
+    border-top: 2px solid rebeccapurple;
 }
 
 .resume h2 {
@@ -182,7 +202,15 @@ p {
 }
 
 
-
+@media only screen and (max-width: 1450px) {
+    .project-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .weather, .githubuser, .hotel {
+        flex-basis: 45%;
+    }
+}
 
 @media only screen and (max-width: 1000px) {
     .about {
@@ -215,7 +243,7 @@ p {
        align-items: flex-start;
     }
   }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     .about {
       display: flex;
       flex-direction: column;
@@ -235,6 +263,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap:1rem;
     }
     .education {
         grid-column: 1/9;
@@ -267,6 +296,17 @@ p {
     
     p {
         font-size: 16px;
+    }
+
+    .weather .project-img, .githubuser .project-img, .hotel .project-img {
+        width: 95%;
+        height:100%;
+    }
+
+    .project-group p {
+        width: 90%;
+        text-align: justify;
+        margin: auto;
     }
 
     .resume h3 {
