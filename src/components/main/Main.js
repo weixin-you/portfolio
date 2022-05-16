@@ -94,6 +94,7 @@ const Introduction = () => {
                                 <li>Researched products from competitors in the graph database industry and summarized their advantages and disadvantages</li>
                                 <li>Outlined the style guide of technical writing for the content writing team</li>
                             </ul>
+                            
 
                         </div>
                         <div className='time-content'>
