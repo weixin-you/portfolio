@@ -39,8 +39,8 @@ p {
 }
 
 .weixin-img {
-    max-width: 35%;
-    max-height: 35%;
+    max-width: 30%;
+    max-height: 30%;
     width: auto;
     height: auto;
     border-radius: 50%;
@@ -110,6 +110,7 @@ a:hover {
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-top: 2px solid rebeccapurple;
+    border-bottom: 2px solid rebeccapurple;
 }
 
 .resume h2 {

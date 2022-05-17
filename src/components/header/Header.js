@@ -6,10 +6,10 @@ const Header = () => {
         <h1>Weixin</h1>
         <nav>
             <ul>
-                <li>about</li>
-                <li>projects</li>
-                <li>resume</li>
-                <li>contact</li>
+                <li><a href='#main-about'>about</a></li>
+                <li><a href='#main-projects'>projects</a></li>
+                <li><a href='#main-resume'>resume</a></li>
+                <li><a href='#footer-contact'>contact</a></li>
             </ul>
         </nav>
 

@@ -29,6 +29,12 @@ nav  ul {
     justify-content: space-between;
     font-size: 1.5rem;
     list-style: none;
+  
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 nav li:hover {

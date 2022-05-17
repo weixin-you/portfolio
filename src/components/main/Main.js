@@ -1,10 +1,14 @@
 import React from 'react'
 import './Main.css'
+import profile from '../images/weixin_you_profile.png'
+import travel from '../images/travel-app.png'
+import hotel from '../images/hotel.png'
+import github from '../images/githubusers.png'
 const Introduction = () => {
   return (
       <div className='main'>
-          <div className='about'>
-            <img src="imgs/weixin_you_profile.png" alt="avatar of weixin" className='weixin-img' />
+          <div className='about' id='main-about'>
+            <img src={profile} alt="avatar of weixin" className='weixin-img' />
             <div className='description'>
                 <h2>About</h2>
                 <p>Hello, I'm Weixin. I have been learning front-end and backend development from various platforms such as 
@@ -15,13 +19,13 @@ const Introduction = () => {
             </div>
            
           </div>
-          <div className='projects'>
+          <div className='projects' id='main-projects'>
               <h2>Projects</h2>
               <div className='project-group'>
                 <div className='weather'>
                     <div>
                         <h3>Travel App</h3>
-                        <img src="imgs/travel-app.png" className="project-img" alt="weather info" />
+                        <img src={travel} className="project-img" alt="weather info" />
                         <p>You can use this app to search for a city where you want to travel and it will display weather information for you.</p>
                         <p className='source-info'>View this app <a href='https://weixin-you.github.io/travel-app/'>online</a> or view the source
                          code <a href='https://github.com/weixin-you/travel-app'>on GitHub</a>.</p>
@@ -30,7 +34,7 @@ const Introduction = () => {
                 <div className='githubuser'>
                     <div>
                         <h3>GitHub Users</h3>
-                        <img src="imgs/githubusers.png" className="project-img" alt="github users" />
+                        <img src={github} className="project-img" alt="github users" />
                         <p>You can use this app to view the top 100 users on GitHub by clicking the page buttons on the bottom of this app.</p>
                         <p className='source-info'>View this app <a href='https://weixin-you.github.io/githubusers/'>online</a> or view the source
                          code <a href='https://github.com/weixin-you/githubusers'>on GitHub</a>.</p>
@@ -39,7 +43,7 @@ const Introduction = () => {
                 <div className='hotel'>
                     <div>
                         <h3>Hotel Management</h3>
-                        <img src="imgs/hotel.png" className="project-img" alt="hotel management" />
+                        <img src={hotel} className="project-img" alt="hotel management" />
                         <p className='source-info'>You can use this app to manage customers in a hotel, including adding, removing, displaying customers and making payments 
                             by customers. View source code <a href='https://github.com/weixin-you/hotel'>on GitHub</a>. </p>
                     </div>
@@ -47,7 +51,7 @@ const Introduction = () => {
               </div>
               
           </div>
-          <div className='resume'>
+          <div className='resume' id='main-resume'>
             <h2>Resume</h2>
             <div className='resume-sections'>
                 <div className='education'>
